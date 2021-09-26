@@ -21,23 +21,7 @@ function replaceText(fromString, toString){
 	  }
     })(document);
 
-    return node_list;
-
-  //   (translate(node, {from: 'en', to: 'nl'}).then(res => {
-  //     console.log(res.text);
-  //     //=> Ik spreek Nederlands!
-  //     console.log(res.from.text.autoCorrected);
-  //     //=> true
-  //     console.log(res.from.text.value);
-  //     //=> I [speak] Dutch!
-  //     console.log(res.from.text.didYouMean);
-  //     //=> false
-  //     return res.text;
-  // }).catch(err => {
-  //     console.error(err);
-  //     return "error";
-  // }))(document);
-  
+    return node_list; 
   }
 
   function quote(str){
