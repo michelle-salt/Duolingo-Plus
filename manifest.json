@@ -1,7 +1,7 @@
 {
   "name": "Duolingo Plus",
   "version": "1.0",
-  "description": "Immerse yourself in a different language by change the language of any (and all) websites you visit to a random language.\nN.B. All http and https websites are supported except for the following search engines: Google, Bing, DuckDuckGo, Yahoo!, Baidu, and Yandex",
+  "description": "Immerse yourself in a different language by changing the language of any (and all) websites you visit to a random language.\nN.B. All http and https websites are supported except for the following search engines: Google, Bing, DuckDuckGo, Yahoo!, Baidu, and Yandex",
   "manifest_version": 2,
   "permissions": ["*://*/*"],
   "content_scripts": [
