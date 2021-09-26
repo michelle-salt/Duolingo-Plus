@@ -1,18 +1,19 @@
 {
-  "name": "Language Learner",
-  "description": "Change languages on webpages",
+  "name": "Bilibili text translate",
   "version": "1.0",
-  "manifest_version": 3,
-  "background": {
-    "service_worker": "background.js"
-  },
-  "permissions": ["storage", "activeTab", "scripting", "https://translate.gooogleapis.com"],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": "/images/get_started16.png"
+  "description": "Translate bilibili page.",
+  "manifest_version": 2,
+  "permissions": ["https://en.wikipedia.org/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://en.wikipedia.org/*"],
+      "js": ["dictionary.js", "main.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
   },
   "icons": {
-    "16": "/images/get_started16.png"
-  },
-  "options_page": "options.html"
+    "128": "icon.png"
+  }
 }
