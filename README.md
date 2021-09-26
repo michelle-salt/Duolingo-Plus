@@ -13,6 +13,7 @@ Immerse yourself in a different language by changing the language of any (and al
 5. Press "Load unpacked" and select the downloaded folder
 
 # Resources Used
-For help changing the text of a webpage I utilized the code of ["a pre-existing repo"](https://github.com/XilkyTofu/bilibili_translate_chrome_extension)
-A list of English words was extracted from MIT's website["https://www.mit.edu/~ecprice/wordlist.10000"] and translated using Google Translate["https://translate.google.ca/?sl=auto&tl=en&op=translate"]
+For help changing the text of a webpage I utilized the code of [a pre-existing repo](https://github.com/XilkyTofu/bilibili_translate_chrome_extension)
+
+A list of English words was extracted from [MIT's website](https://www.mit.edu/~ecprice/wordlist.10000) and translated using [Google Translate](https://translate.google.ca/?sl=auto&tl=en&op=translate)
 
