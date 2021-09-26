@@ -1,7 +1,7 @@
 import test from 'ava';
 
-import languages from './languages';
-import translate from './index';
+import languages from './APIlanguages';
+import translate from './APIindex';
 
 test('translate without any options', async t => {
     try {

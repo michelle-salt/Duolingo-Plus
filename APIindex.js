@@ -4,7 +4,7 @@ var got = require('got');
 var safeEval = require('safe-eval');
 var token = require('google-translate-token');
 
-var languages = require('./languages');
+var languages = require('./APIlanguages');
 
 export function translate(text, opts) {
     opts = opts || {};
