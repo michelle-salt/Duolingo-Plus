@@ -1,35 +1,33 @@
-/*
-* Note: most code in this file has been borrowed from
-* Any modified/added code (within the main.js file) has been commented
-*/
+// Note: some code in this file has been borrowed from
+
+//Replaces all the text in the webpage
 function replaceText(fromString, toString){
   getTextNodes().forEach(function(node){
-    //Modifications made by me
-    node.nodeValue = node.nodeValue.replace(new RegExp(quote(fromString.toLowerCase()), 'g'), toString.toLowerCase());
+    //Converts to lowercase
+    node.nodeValue = node.nodeValue.replace(new RegExp(fromString.toLowerCase(), 'g'), toString.toLowerCase());
   });
-
+  
+  //Gets a list of words
   function getTextNodes(){
-    var node_list = [];
-
+    var listOfNodes = [];
+    
     (function scan(node){
-      if(node.childNodes.length) 
-        for(var i = 0; i < node.childNodes.length; i++) {
-          scan(node.childNodes[i]);
-		}
-      else if(node.nodeType == Node.TEXT_NODE) {
-        node_list.push(node);
-	  }
-    })(document);
-
-    return node_list; 
-  }
-
-  function quote(str){
-    return (str+'').replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
+      if(node.nodeType == Node.TEXT_NODE) {
+        listOfNodes.push(node);
+      } else if(node.childNodes.length) 
+      for(var i = 0; i < node.childNodes.length; i++) {
+        scan(node.childNodes[i]);
+        }
+      }
+    )(document);
+    
+    return listOfNodes; 
   }
 }
 
-//All code in this function has been added by me
+//Selects a random languages
+//Changes the language
+//Timesout after 5 seconds
 setTimeout(function () {
   var rndNum = Math.floor((Math.random() * 4) + 1);
   if (rndNum == 1) {
@@ -49,6 +47,6 @@ setTimeout(function () {
       replaceText(arabic[key], key);
     }
   }
-}, 3000);
+}, 5000);
 
 
