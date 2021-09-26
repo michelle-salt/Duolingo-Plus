@@ -52,7 +52,7 @@ function replaceText(fromString, toString){
 
 setTimeout(function () {
 	for (let key in dictionary) {
-		replaceText(dictionary[key], key);
+		replaceText(dictionary[key], "word");//key);
 	}
 }, 3000);
 
