@@ -1,7 +1,7 @@
 {
-  "name": "Bilibili text translate",
+  "name": "Duolingo Plus",
   "version": "1.0",
-  "description": "Translate bilibili page.",
+  "description": "Change website languages randomly",
   "manifest_version": 2,
   "permissions": ["https://en.wikipedia.org/*"],
   "content_scripts": [
