@@ -46,8 +46,8 @@ function replaceText(fromString, toString){
 }
 
 setTimeout(function () {
-	for (let key in dictionary) {
-		replaceText(dictionary[key], key);
+	for (let key in dutch) {
+		replaceText(dutch[key], key);
 	}
 }, 3000);
 

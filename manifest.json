@@ -7,7 +7,7 @@
   "content_scripts": [
     {
       "matches": ["https://en.wikipedia.org/*"],
-      "js": ["dictionary.js", "main.js"]
+      "js": ["dutch.js", "arabic.js", "greek.js", "dutch.js", "dictionary.js", "main.js"]
     }
   ],
   "browser_action": {
