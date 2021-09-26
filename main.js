@@ -1,6 +1,10 @@
-//Actual code
+/*
+* Note: most code in this file has been borrowed from
+* Any modified/added code (within the main.js file) has been commented
+*/
 function replaceText(fromString, toString){
   getTextNodes().forEach(function(node){
+    //Modifications made by me
     node.nodeValue = node.nodeValue.replace(new RegExp(quote(fromString.toLowerCase()), 'g'), toString.toLowerCase());
   });
 
@@ -8,14 +12,10 @@ function replaceText(fromString, toString){
     var node_list = [];
 
     (function scan(node){
-      //If there's a word (length != 0)
       if(node.childNodes.length) 
-        //Loop through all words
         for(var i = 0; i < node.childNodes.length; i++) {
-          //Scan the word
           scan(node.childNodes[i]);
 		}
-      //If it's a word???
       else if(node.nodeType == Node.TEXT_NODE) {
         node_list.push(node);
 	  }
@@ -29,6 +29,7 @@ function replaceText(fromString, toString){
   }
 }
 
+//All code in this function has been added by me
 setTimeout(function () {
   var rndNum = Math.floor((Math.random() * 4) + 1);
   if (rndNum == 1) {
