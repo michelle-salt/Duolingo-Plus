@@ -3,11 +3,11 @@
   "version": "1.0",
   "description": "Change website languages randomly",
   "manifest_version": 2,
-  "permissions": ["https://en.wikipedia.org/*"],
+  "permissions": ["https://en.wikipedia.org/*", "https://stackoverflow.com/*"],
   "content_scripts": [
     {
-      "matches": ["https://en.wikipedia.org/*"],
-      "js": ["dutch.js", "arabic.js", "greek.js", "dutch.js", "dictionary.js", "main.js"]
+      "matches": ["https://en.wikipedia.org/*", "https://stackoverflow.com/*"],
+      "js": ["dutch.js", "arabic.js", "greek.js", "japanese.js", "dictionary.js", "main.js"]
     }
   ],
   "browser_action": {

@@ -46,9 +46,24 @@ function replaceText(fromString, toString){
 }
 
 setTimeout(function () {
-	for (let key in dutch) {
-		replaceText(dutch[key], key);
-	}
+  var rndNum = Math.floor((Math.random() * 4) + 1);
+  if (rndNum == 1) {
+    for (let key in dutch) {
+      replaceText(dutch[key], key);
+    }
+  } else if (rndNum == 2) {
+    for (let key in greek) {
+      replaceText(greek[key], key);
+    }
+  } else if (rndNum == 3) {
+    for (let key in japanese) {
+      replaceText(japanese[key], key);
+    }
+  } else {
+    for (let key in arabic) {
+      replaceText(arabic[key], key);
+    }
+  }
 }, 3000);
 
 
