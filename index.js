@@ -6,7 +6,7 @@ var token = require('google-translate-token');
 
 var languages = require('./languages');
 
-function translate(text, opts) {
+export function translate(text, opts) {
     opts = opts || {};
 
     var e;
